@@ -48,12 +48,12 @@
   };
 </script>
 
-  <meta name="description" content="如果可以不走弯路的话">
+  <meta name="description" content="致那黑夜中的呜咽与怒吼">
 <meta property="og:type" content="website">
-<meta property="og:title" content="td刚建的博客">
+<meta property="og:title" content="重生之">
 <meta property="og:url" content="http://nothatdinger.github.io/index.html">
-<meta property="og:site_name" content="td刚建的博客">
-<meta property="og:description" content="如果可以不走弯路的话">
+<meta property="og:site_name" content="重生之">
+<meta property="og:description" content="致那黑夜中的呜咽与怒吼">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="nothatDinger">
 <meta name="twitter:card" content="summary">
@@ -70,7 +70,7 @@
   };
 </script>
 
-  <title>td刚建的博客</title>
+  <title>重生之</title>
   
 
 
@@ -114,11 +114,11 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">td刚建的博客</span>
+        <span class="site-title">重生之</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">runnig on docker(fake)</p>
+        <p class="site-subtitle">常回来看看</p>
   </div>
 
   <div class="site-nav-toggle">
@@ -180,21 +180,21 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://nothatdinger.github.io/2021/12/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://nothatdinger.github.io/2021/12/09/makefile/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.jpg">
       <meta itemprop="name" content="nothatDinger">
-      <meta itemprop="description" content="如果可以不走弯路的话">
+      <meta itemprop="description" content="致那黑夜中的呜咽与怒吼">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="td刚建的博客">
+      <meta itemprop="name" content="重生之">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2021/12/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2021/12/09/makefile/" class="post-title-link" itemprop="url">MakeFile</a>
         </h1>
 
         <div class="post-meta">
@@ -203,8 +203,20 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-12-08 23:19:14" itemprop="dateCreated datePublished" datetime="2021-12-08T23:19:14+08:00">2021-12-08</time>
+              <time title="创建时间：2021-12-09 23:28:00 / 修改时间：23:31:55" itemprop="dateCreated datePublished" datetime="2021-12-09T23:28:00+08:00">2021-12-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/coding/" itemprop="url" rel="index">
+                    <span itemprop="name">coding</span>
+                  </a>
+                </span>
             </span>
 
           
@@ -218,15 +230,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/12/08/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">all: minic</span></span><br><span class="line">LLVM_CONFIG = llvm-config</span><br><span class="line">LLVM_CXXFLAGS = <span class="variable">$(<span class="built_in">shell</span> <span class="variable">$(LLVM_CONFIG)</span> --cxxflags --ldflags --system-libs --libs core )</span></span><br><span class="line">OBJS = parser.o \</span><br><span class="line">				token.o  \</span><br><span class="line">				astnode.o \</span><br><span class="line">				main.o \</span><br><span class="line"><span class="section">astnode.cpp: astnode.h</span></span><br><span class="line"><span class="section">parser.cpp: parser.y</span></span><br><span class="line">		bison -d parser.y -o <span class="variable">$@</span></span><br><span class="line"></span><br><span class="line"><span class="section">token.cpp: token.l parser.hpp </span></span><br><span class="line">		flex -o <span class="variable">$@</span> token.l</span><br><span class="line"><span class="section">%.o: %.cpp# <span class="variable">$&lt;</span>表示的就是依赖文件中的第一项这里， 即%.cpp</span></span><br><span class="line">		g++  -o <span class="variable">$@</span> <span class="variable">$&lt;</span> <span class="variable">$(LLVM_CXXFLAGS)</span>  -c </span><br><span class="line"><span class="section">minic: <span class="variable">$(OBJS)</span># <span class="variable">$@</span>表示的就是目标文件集，即minic</span></span><br><span class="line">		g++ -o <span class="variable">$@</span> <span class="variable">$(OBJS)</span> <span class="variable">$(LLVM_CXXFLAGS)</span> </span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">		<span class="variable">$(RM)</span> -rf <span class="variable">$(OBJS)</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -250,11 +254,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.jpg">
       <meta itemprop="name" content="nothatDinger">
-      <meta itemprop="description" content="如果可以不走弯路的话">
+      <meta itemprop="description" content="致那黑夜中的呜咽与怒吼">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="td刚建的博客">
+      <meta itemprop="name" content="重生之">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -329,82 +333,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://nothatdinger.github.io/2020/01/01/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="nothatDinger">
-      <meta itemprop="description" content="如果可以不走弯路的话">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="td刚建的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/01/test/" class="post-title-link" itemprop="url">test</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-01 04:49:11" itemprop="dateCreated datePublished" datetime="2020-01-01T04:49:11+08:00">2020-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-09 00:39:14" itemprop="dateModified" datetime="2021-12-09T00:39:14+08:00">2021-12-09</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="/2020/01/01/test/1.jpg"></p>
-<p><img src="/sources/images/pasted-0.png" alt="upload successful"><br>fasdfasdf</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://nothatdinger.github.io/2019/12/22/second/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.jpg">
       <meta itemprop="name" content="nothatDinger">
-      <meta itemprop="description" content="如果可以不走弯路的话">
+      <meta itemprop="description" content="致那黑夜中的呜咽与怒吼">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="td刚建的博客">
+      <meta itemprop="name" content="重生之">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -426,7 +364,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-08 23:19:14" itemprop="dateModified" datetime="2021-12-08T23:19:14+08:00">2021-12-08</time>
+                <time title="修改时间：2021-12-09 23:17:49" itemprop="dateModified" datetime="2021-12-09T23:17:49+08:00">2021-12-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -451,7 +389,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="解题流程"><a href="#解题流程" class="headerlink" title="解题流程"></a>解题流程</h1><h2 id="第一层显而易见是Base64编码"><a href="#第一层显而易见是Base64编码" class="headerlink" title="第一层显而易见是Base64编码"></a>第一层显而易见是Base64编码</h2><p><img src="https://img-blog.csdn.net/20180129142222009?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfNDA5ODAzOTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
+          <h1 id="解题流程"><a href="#解题流程" class="headerlink" title="解题流程"></a>解题流程</h1><h2 id="第一层显而易见是Base64编码"><a href="#第一层显而易见是Base64编码" class="headerlink" title="第一层显而易见是Base64编码"></a>第一层显而易见是Base64编码</h2><h2 id="第二层是转义序列的八进制数"><a href="#第二层是转义序列的八进制数" class="headerlink" title="第二层是转义序列的八进制数"></a>第二层是转义序列的八进制数</h2><p>八进制转义序列的格式是”\000”,  “000”代表一个八进制整数，且这个整数必须是三位以下，可以表示一个Ascii字符。<strong>python可以识别它并直接将其Ascii字符转换出来</strong><br><img src="https://img-blog.csdnimg.cn/2019112310203527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTQ4NDA5NA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="第三层是转义序列的十六进制数"><a href="#第三层是转义序列的十六进制数" class="headerlink" title="第三层是转义序列的十六进制数"></a>第三层是转义序列的十六进制数</h2><p>八进制转义序列的格式是”\x00”,  “00”代表一个十六进制整数，且这个整数必须是二位以下，可以表示一个Ascii字符。<strong>python也可以识别它并直接将其Ascii字符转换出来</strong></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/12/22/second/#more" rel="contents">
@@ -536,27 +475,27 @@
     <img class="site-author-image" itemprop="image" alt="nothatDinger"
       src="/images/touxiang.jpg">
   <p class="site-author-name" itemprop="name">nothatDinger</p>
-  <div class="site-description" itemprop="description">如果可以不走弯路的话</div>
+  <div class="site-description" itemprop="description">致那黑夜中的呜咽与怒吼</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
